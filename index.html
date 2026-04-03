@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Tracker Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Crypto Tracker Dashboard</h1>
+        <p class="subtitle">Track real-time crypto prices and market data</p>
+
+        <div class="search-box">
+            <select id="coinSelect">
+    <option value="bitcoin">Bitcoin</option>
+    <option value="ethereum">Ethereum</option>
+    <option value="tether">Tether</option>
+    <option value="binancecoin">BNB</option>
+    <option value="solana">Solana</option>
+    <option value="ripple">XRP</option>
+    <option value="usd-coin">USD Coin</option>
+    <option value="dogecoin">Dogecoin</option>
+    <option value="cardano">Cardano</option>
+    <option value="tron">TRON</option>
+    <option value="avalanche-2">Avalanche</option>
+    <option value="chainlink">Chainlink</option>
+    <option value="polkadot">Polkadot</option>
+    <option value="polygon">Polygon</option>
+    <option value="litecoin">Litecoin</option>
+    <option value="bitcoin-cash">Bitcoin Cash</option>
+    <option value="uniswap">Uniswap</option>
+    <option value="internet-computer">Internet Computer</option>
+    <option value="near">NEAR Protocol</option>
+    <option value="stellar">Stellar</option>
+    <option value="aptos">Aptos</option>
+    <option value="render-token">Render</option>
+    <option value="filecoin">Filecoin</option>
+    <option value="hedera-hashgraph">Hedera</option>
+    <option value="cosmos">Cosmos</option>
+    <option value="arbitrum">Arbitrum</option>
+    <option value="maker">Maker</option>
+    <option value="vechain">VeChain</option>
+    <option value="optimism">Optimism</option>
+    <option value="the-graph">The Graph</option>
+    <option value="injective-protocol">Injective</option>
+    <option value="thorchain">THORChain</option>
+    <option value="algorand">Algorand</option>
+    <option value="aave">Aave</option>
+    <option value="immutable-x">Immutable</option>
+    <option value="quant-network">Quant</option>
+    <option value="sandbox">The Sandbox</option>
+    <option value="decentraland">Decentraland</option>
+    <option value="fantom">Fantom</option>
+    <option value="flow">Flow</option>
+    <option value="tezos">Tezos</option>
+    <option value="eos">EOS</option>
+    <option value="axie-infinity">Axie Infinity</option>
+    <option value="neo">NEO</option>
+    <option value="kava">Kava</option>
+    <option value="gala">Gala</option>
+    <option value="curve-dao-token">Curve DAO</option>
+    <option value="mina-protocol">Mina</option>
+    <option value="sui">Sui</option>
+    <option value="sei-network">Sei</option>
+    <option value="pepe">Pepe</option>
+</select>
+
+            <button id="trackBtn">Track</button>
+        </div>
+
+        <div class="card" id="cryptoCard">
+    <h2 id="coinName">Select a coin</h2>
+
+    <div class="stats-grid">
+        <div class="stat-box">
+            <h3>Price</h3>
+            <p id="price">-</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>24h Change</h3>
+            <p id="change">-</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>Market Cap</h3>
+            <p id="marketCap">-</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>24h Volume</h3>
+            <p id="volume">-</p>
+        </div>
+
+        <div class="stat-box sentiment-box">
+            <h3>Market Trend</h3>
+            <p id="sentiment">-</p>
+        </div>
+
+        
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
